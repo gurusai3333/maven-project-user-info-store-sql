@@ -1,0 +1,53 @@
+.......Hibernate Maven Example.......
+
+Nov 29, 2022 12:28:30 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.1.4.Final
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: com.mysql.cj.jdbc.Driver
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost:3306/tutorialdb]
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Nov 29, 2022 12:28:32 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Nov 29, 2022 12:28:33 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl logSelectedDialect
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+Hibernate: drop table if exists user_table
+Nov 29, 2022 12:28:35 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@526a9908] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: drop table if exists user_table_SEQ
+Hibernate: create table user_table (user_id integer not null, created_by varchar(255), created_date datetime(6), user_name varchar(255), primary key (user_id)) engine=InnoDB
+Nov 29, 2022 12:28:37 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3902bd2c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+
+Hibernate: create table user_table_SEQ (next_val bigint) engine=InnoDB
+Hibernate: insert into user_table_SEQ values ( 1 )
+Hibernate: select next_val as id_val from user_table_SEQ for update
+Hibernate: update user_table_SEQ set next_val= ? where next_val=?
+Hibernate: select next_val as id_val from user_table_SEQ for update
+Hibernate: update user_table_SEQ set next_val= ? where next_val=?
+
+.......Records Saved Successfully To The Database.......
+
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
+Hibernate: insert into user_table (created_by, created_date, user_name, user_id) values (?, ?, ?, ?)
